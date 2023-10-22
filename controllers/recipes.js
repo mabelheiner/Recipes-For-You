@@ -13,7 +13,7 @@ const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
-    .db('cse341')
+    .db('Recipes-For-You')
     .collection('recipes')
     .find({ _id: userId });
   result.toArray().then((lists) => {
@@ -57,7 +57,7 @@ const updateRecipe = async (req, res) => {
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'An error occurred while updating the contact.');
+    res.status(500).json(response.error || 'An error occurred while updating the recipe.');
   }
 };
 
@@ -68,7 +68,7 @@ const deleteRecipe = async (req, res) => {
   if (response.deletedCount > 0) {
     res.status(200).send();
   } else {
-    res.status(500).json(response.error || 'An error occurred while deleting the contact.');
+    res.status(500).json(response.error || 'An error occurred while deleting the recipe.');
   }
 }
 module.exports = { 

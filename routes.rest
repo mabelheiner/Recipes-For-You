@@ -1,0 +1,48 @@
+// LOCALHOST ### 
+GET http://localhost:8080/recipes 
+
+### 
+GET http://localhost:8080/recipes/652b6c1a1a382f2981c3e9a2
+
+### 
+POST http://localhost:8080/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Mac and Cheese",
+    "source": "Kraft",
+    "ingredients": "water, noodles, milk, cheese packet, butter",
+    "instructions": "boil water, boil noodles, strain, mix cheese packet, mix butter, mix milk",
+    "servings": 2,
+    "prepTime": "15 min",
+    "totalTime": "1 hour"
+}
+
+### 
+PUT http://localhost:8080/recipes/6534a71721ea607de6e4d4e4 HTTP/1.1 
+content-type: application/json
+
+{
+    "name": "Mac and Cheese",
+    "source": "Kraft",
+    "ingredients": "water, noodles, milk, cheese packet, butter",
+    "instructions": "boil water, boil noodles, strain, mix cheese packet, mix butter, mix milk",
+    "servings": 2.5,
+    "prepTime": 45,
+    "totalTime": 60
+}
+
+### 
+DELETE http://localhost:8080/recipes/65346390555df65ff6220fa6 HTTP/1.1
+
+// PRODUCTION Deploy ### GET https://cse341-072u.onrender.com/contacts ### GET https://cse341-072u.onrender.com/contacts/650d14f45a1dd409fb78a71f ### GET https://cse341-072u.onrender.com/contacts/650d15665a1dd409fb78a721 ### GET https://cse341-072u.onrender.com/contacts/650d15d25a1dd409fb78a722
+
+### POST CONTACT POST https://cse341-072u.onrender.com/contacts HTTP/1.1 content-type: application/json
+
+{ "firstName":"Judy", "lastName":"Heiner", "email":"judyheiner@gmail.com", "favoriteColor":"Yellow", "birthday":"December 8" }
+
+### PUT CONTACT PUT https://cse341-072u.onrender.com/contacts/6518fd177b00a0111e10c824 HTTP/1.1 content-type: application/json
+
+{ "firstName":"Judy", "lastName":"Wegner", "email":"judywegner@gmail.com", "favoriteColor":"Yellow", "birthday":"December 8" }
+
+### DELETE CONTACT DELETE https://cse341-072u.onrender.com/contacts/6518fd177b00a0111e10c824 HTTP/1.1

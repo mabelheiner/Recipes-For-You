@@ -43,25 +43,25 @@
               "type": "object",
               "properties": {
                 "name": {
-                  "example": "any"
+                  "example": "Recipe Name"
                 },
                 "source": {
-                  "example": "any"
+                  "example": "Cookbook Name"
                 },
                 "ingredients": {
-                  "example": "any"
+                  "example": "List of Ingredients"
                 },
                 "instructions": {
-                  "example": "any"
+                  "example": "Steps to Create Your Recipe"
                 },
                 "servings": {
-                  "example": "any"
+                  "example": 2
                 },
                 "prepTime": {
-                  "example": "any"
+                  "example": 45
                 },
                 "totalTime": {
-                  "example": "any"
+                  "example": 90
                 }
               }
             }

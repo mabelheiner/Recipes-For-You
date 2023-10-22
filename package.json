@@ -17,6 +17,7 @@
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "swagger-autogen": "^2.23.6",
-    "swagger-ui-express": "^5.0.0"
+    "swagger-ui-express": "^5.0.0",
+    "validatorjs": "^3.22.1"
   }
 }
